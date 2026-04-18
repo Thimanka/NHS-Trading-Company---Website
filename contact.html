@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | NHS Trading Company</title>
+    <meta name="description" content="Contact NHS Trading Company for wholesale inquiries, sample requests, and pricing on premium care label jumbo rolls.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="background-color: var(--bg-light);">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fa-solid fa-tags" style="color: var(--secondary-color);"></i>
+                    NHS <span>Trading</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div style="padding: 160px 0 60px; background-color: var(--primary-color); color: white; text-align: center;">
+        <div class="container fade-in">
+            <h1 style="color: white; font-size: 48px; margin-bottom: 16px;">Contact Us</h1>
+            <p style="color: rgba(255,255,255,0.8); font-size: 20px; max-width: 600px; margin: 0 auto;">Get in touch for wholesale pricing and sample requests.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="container">
+            <div class="contact-container fade-in">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Whether you need a custom quote, want to request material samples, or have a question about our logistics, our team is ready to help.</p>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4 style="color: white; margin-bottom: 4px;">Head Office & Warehouse</h4>
+                            <p style="margin: 0; color: rgba(255,255,255,0.8);">123 Logistics Blvd,<br>Warehouse District, WD 10023</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4 style="color: white; margin-bottom: 4px;">Phone Number</h4>
+                            <p style="margin: 0; color: rgba(255,255,255,0.8);">+1 (555) 123-4567<br>Mon-Fri, 9am - 5pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4 style="color: white; margin-bottom: 4px;">Email Address</h4>
+                            <p style="margin: 0; color: rgba(255,255,255,0.8);">sales@nhstrading.com<br>info@nhstrading.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 24px;">Send us a message</h3>
+                    <!-- Note: The form submission is handled by our backend (app.py/Server.java) -->
+                    <form action="/submit-form" method="POST">
+                        <div class="form-group">
+                            <label for="name">Company Name / Contact Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required placeholder="Your Company Ltd.">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required placeholder="purchasing@yourcompany.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Product of Interest</label>
+                            <select id="interest" name="interest" class="form-control">
+                                <option value="nylon">Nylon Taffeta</option>
+                                <option value="satin">Polyester Satin</option>
+                                <option value="cotton">Cotton Tape</option>
+                                <option value="other">Other / General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message / Sample Request Details</label>
+                            <textarea id="message" name="message" class="form-control" required placeholder="Please describe your volume requirements and specify if you need samples..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none;">
+                <p>&copy; 2026 NHS Trading Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
